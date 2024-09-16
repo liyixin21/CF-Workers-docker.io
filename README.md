@@ -11,14 +11,14 @@
 
 ## 如何使用？ [视频教程](https://www.youtube.com/watch?v=l2jwq9CagNQ)
 
-例如您的Workers项目域名为：`docker.fxxk.dedyn.io`；
+例如您的Workers项目域名为：`docker.23250232.xyz`；
 
 ### 1.官方镜像路径前面加域名
 ```shell
-docker pull docker.fxxk.dedyn.io/stilleshan/frpc:latest
+docker pull docker.23250232.xyz/stilleshan/frpc:latest
 ```
 ```shell
-docker pull docker.fxxk.dedyn.io/library/nginx:stable-alpine3.19-perl
+docker pull docker.23250232.xyz/library/nginx:stable-alpine3.19-perl
 ```
 
 ### 2.一键设置镜像加速
@@ -27,7 +27,7 @@ docker pull docker.fxxk.dedyn.io/library/nginx:stable-alpine3.19-perl
 sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
 {
-  "registry-mirrors": ["https://docker.fxxk.dedyn.io"]  # 请替换为您自己的Worker自定义域名
+  "registry-mirrors": ["https://docker.23250232.xyz"]  # 请替换为您自己的Worker自定义域名
 }
 EOF
 sudo systemctl daemon-reload
